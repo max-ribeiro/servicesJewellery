@@ -1,12 +1,11 @@
         <!-- footer start -->
             </div>    
         </div>
+        <?php
+            require_once('../src/backend/authentication/sessionValidation.php'); 
+        ?>
         <footer>
-            <script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-              crossorigin="anonymous"></script>
-              <script type="text/javascript" src="../src/components/Dashboard/assets/scripts/main.js"></script>
+            <script src="https://kit.fontawesome.com/d84502988e.js" crossorigin="anonymous"></script>
         </footer>
         <!-- footer end -->
     </body>
