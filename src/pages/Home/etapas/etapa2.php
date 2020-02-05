@@ -26,7 +26,7 @@
             <strong>Cliente já Cadastrado</strong>  
         </li>
     </ul>
-    <a href="./"><button class="btn"><i class="fas fa-long-arrow-alt-left"></i> Etapa Anterior</button></a>
+    <a href="./"><button class="btn">&larr; Etapa Anterior</button></a>
 </div>
 <!-- modal -->
 <div id="addUserModal" class="modal">
@@ -35,27 +35,41 @@
         <!-- Modal Header -->
         <div class="modal-header">
             <span class="close" onclick="hideModal()">&times;</span>
-            <h2>Cadastrar Novo Usuario</h2>
+            <h2>Cadastrar Cliente</h2>
         </div>
         <!-- Modal Body -->
         <div class="modal-body">
             <div class="input-group col-2" id="fullName">
-                <div>
-                    <label>Nome</label><input type="text"/>
+                <div class="col-2-ls">
+                    <label>Nome:</label><input type="text"/>
                 </div>
-                <div>
-                    <label>Sobrenome</label><input type="text"/>
+                <div class="col-2-ls">
+                    <label>Sobrenome:</label><input type="text"/>
                 </div>
             </div>
-        </div>
-        <!-- Modal footer -->
-        <div class="modal-footer">
+            <div class="input-group col-2" id="tel">
+                <div class="col-2-ls">
+                    <label>Telefone 1:</label><input type="text" class="modal-input"/>
+                </div>
+                <div class="col-2-ls">
+                    <label>Telefone 2:</label><input type="text" class="modal-input"/>
+                </div>
+            </div>
+            <div class="input-group col-2" id="tel">
+                <div class="input-group col-2-ls">
+                    <label>RG/CPF:</label><input type="text" class="modal-input"/>
+                </div>
+                <div class="input-group col-2-ls">
+                    <label>Afiliado:</label><input type="text" class="modal-input"/>
+                </div>
+            </div>
+            <hr/>
             <div class="input-group col-2" id="fullName">
-                <button class="btn btn-cancel">Cancelar</button>
+                <button class="btn btn-cancel" onclick="hideModal()">Cancelar</button>
                 <button class="btn btn-save">Salvar</button>
             </div>
-
         </div>
+      
     </div>
 </div>
 <script src="../src/pages/Home/js/script.js"></script>

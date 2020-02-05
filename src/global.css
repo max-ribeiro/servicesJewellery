@@ -71,12 +71,22 @@
     cursor:pointer;
     transition: background 0.6s;
   }
-  button.btn .btn-cancel{
+  button.btn.btn-cancel{
+    margin-top: 10px;
     background: #f82e2e;
   }
-  button.btn .btn-cancel{
-    background: #2ef85a;
+  button.btn.btn-save{
+    margin-top: 10px;
+
+    background:#2ef82e;
   }
+  button.btn.btn-cancel:hover{
+    background: #f8932e;
+  }
+  button.btn.btn-save:hover{
+    background:#9fff9f;
+  }
+ 
   .alert-box{
     background-color: #f82e2e;
     font-size: 14px;
@@ -139,15 +149,21 @@
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  border-radius: 20px;
+  padding: 20px 16px;
+}
 
 /* Modal Footer */
 .modal-footer {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #b3b3b3;
   color: white;
 }
-
+hr{
+  margin: 15px 0;
+  color: #ebebeb;
+}
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -160,9 +176,24 @@
   animation-name: animatetop;
   animation-duration: 0.4s
 }
-
+.modal-input{
+  width:auto;
+}
+.input-group div label{
+  width: fit-content;
+}
 /* Add Animation */
 @keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 } 
+
+.col-2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.col-2-ls{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 5px;
+}

@@ -34,8 +34,18 @@ button.btn{
 a{
   text-decoration: none;
 }
-
-.col-2{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+@media(max-width:650px){
+  .col-2{
+    grid-template-columns: 1fr;
+  }
 }
+button.btn{
+  gap:10px;
+}
+@media(max-width:650px){
+  .col-2-ls{
+    grid-template-columns: 1fr;
+  }
+}
+
+
