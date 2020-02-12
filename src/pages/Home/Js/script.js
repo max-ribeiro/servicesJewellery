@@ -1,5 +1,6 @@
 // Get the modal
 var modal = document.getElementById("addUserModal");
+var searchModal = document.getElementById("searchUser");
 function showModal(){
   modal.style.display = "block";
 }
@@ -12,3 +13,10 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 } 
+function showSeach(){
+  searchModal.style.display = "block";
+}
+function hideSearch(){
+  searchModal.style.display = "none";
+
+}

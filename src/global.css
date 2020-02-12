@@ -72,12 +72,13 @@
     transition: background 0.6s;
   }
   button.btn.btn-cancel{
+    width: 70%;
     margin-top: 10px;
     background: #f82e2e;
   }
   button.btn.btn-save{
+    width: 70%;
     margin-top: 10px;
-
     background:#2ef82e;
   }
   button.btn.btn-cancel:hover{
@@ -178,6 +179,27 @@ hr{
 }
 .modal-input{
   width:auto;
+  
+}
+.modal-input:focus{
+  width:auto;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  /* padding: 1px 0px 1px 1px;
+  margin: 3px 1px 3px 0px; */
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+span.close{
+  padding: 5px;
+  background:#000;
+  color:#fffcd3;
+  float: right;
+  border-radius: 20px;;
+  cursor:pointer;
+}
+span.close:hover{
+  background: rgb(104, 45, 45);
+  box-shadow: 0 2px 2px rgb(71, 240, 226);
+  transition: background 0.6s;
 }
 .input-group div label{
   width: fit-content;
