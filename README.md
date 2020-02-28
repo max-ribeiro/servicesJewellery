@@ -28,3 +28,14 @@ In order to simplify this process you can add the same user as mine:
 INSERT INTO users VALUES('','admin',1,'$2y$10$mjrSxAOiOyEU8zlwubUrQuVA3Bxzm6Iy4ZXVnRqCAyrnvSvZJsyJu',1);
  ```
 In this case, the password will be the same as the username for admin.
+Finally we have to create a procedure on mysql that will be used on user authentication. Run the following commands:
+``` SQL
+  DELIMITER $$
+    CREATE PROCEDURE userAuth(userName VARCHAR(45),userPass VARCHAR(45));
+    BEGIN
+      SELECT user_id,user_name,user_level,user_active FROM users WHERE
+      user_name == userName AND
+      user_pass == userPass
+    END
+  DELIMITER ;
+```
