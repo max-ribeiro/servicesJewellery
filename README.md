@@ -11,7 +11,7 @@ To run this project in development mode, you will need to set up a local server 
 
 #### Preparing the database
 
-First we have to create the database and the system users table, run the following commands on your database administration system
+First we have to create the database and the system users table, run the following commands on your database administration system:
 
 ``` SQL
 CREATE DATABASE main;
@@ -22,9 +22,9 @@ CREATE TABLE users(user_id INT PRIMARY_KEY AUTO INCREMENT,
                    user_active TINYINT);
 ```
 
-Now we have to insert a user to access the system, the user password must be encrypted to php decrypt
-to simplify you can add the same as mine
+Now we have to insert a user to access the system, the user password must be encrypted.
+In order to simplify this process you can add the same user as mine:
 ``` SQL
-INSERT INTO users VALUES('','admin',1,'$2y$10$mjrSxAOiOyEU8zlwubUrQuVA3Bxzm6Iy4ZXVnRqCAyrnvSvZJsyJu',1)
+INSERT INTO users VALUES('','admin',1,'$2y$10$mjrSxAOiOyEU8zlwubUrQuVA3Bxzm6Iy4ZXVnRqCAyrnvSvZJsyJu',1);
  ```
-In this case, the password will be the same as the username for admin
+In this case, the password will be the same as the username for admin.
