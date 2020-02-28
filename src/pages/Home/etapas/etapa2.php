@@ -36,15 +36,16 @@
         <div class="modal-header">
             <span class="close" onclick="hideModal()">&times;</span>
             <h2>Cadastrar Cliente</h2>
+            <h5><i> *(asterisco) : campos obrigatorios</i> </h6>
         </div>
         <!-- Modal Body -->
         <div class="modal-body">
             <div class="input-group col-2" id="fullName">
                 <div class="col-2-ls">
-                    <label>Nome:</label><input type="text" class="modal-input" id="name"/>
+                    <label>Nome: <span class="red">*</span></label><input type="text" class="modal-input" id="name"/>
                 </div>
                 <div class="col-2-ls">
-                    <label>Sobrenome:</label><input type="text" class="modal-input" id="surname"/>
+                    <label>Sobrenome: <span class="red">*</span></label><input type="text" class="modal-input" id="surname"/>
                 </div>
             </div>
             <div class="input-group col-2" id="tel">
@@ -57,7 +58,7 @@
             </div>
             <div class="input-group col-2" id="tel">
                 <div class="input-group col-2-ls">
-                    <label>RG/CPF:</label><input type="text" class="modal-input" id="rgCpf"/>
+                    <label>RG/CPF: <span class="red">*</span></label><input type="text" class="modal-input" id="rgCpf"/>
                 </div>
                 <div class="input-group col-2-ls">
                     <label>Associados:</label><input type="text" class="modal-input" id="assoc"/>

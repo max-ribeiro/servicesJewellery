@@ -17,10 +17,10 @@ class UserModel{
     public function getTel2(){
         return $this->tel2;
     }
-    public function getRgCpg(){
+    public function getRgCpf(){
         return $this->rgCpf;
     }
-    public function assoc(){
+    public function getAssoc(){
         return $this->assoc;
     }
     //Class Constructor

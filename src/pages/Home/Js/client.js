@@ -7,8 +7,8 @@ function addClient(e){
         let tel2 = document.getElementById('telphone2').value;
         let rgCpf = document.getElementById('rgCpf').value;
         let assoc = document.getElementById('assoc').value;
-        if(name == ''|| surname == ''){
-            alert("Verifique se o nome e o sobrenome foram preenchidos corretamente e tente novamente.");
+        if(name == ''|| surname == '' || rgCpf == ''){
+            alert("Verifique se os campos obrigatórios foram preenchidos corretamente e tente novamente.");
         }else{
             const user = {
                 name,
@@ -27,7 +27,7 @@ function addClient(e){
                 if(response){
                     alert(response);
                 }else{
-                    alert('Opss! Ocorreu algum erro no registro');
+                    alert('Opss! Ocorreu algum erro ao processar o registro');
                 }
             }).fail((xhr,desc,err)=>{
                 alert('Uups! Ocorreu algum erro!');
