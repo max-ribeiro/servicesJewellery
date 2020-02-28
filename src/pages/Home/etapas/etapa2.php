@@ -36,7 +36,7 @@
         <div class="modal-header">
             <span class="close" onclick="hideModal()">&times;</span>
             <h2>Cadastrar Cliente</h2>
-            <h5><i> *(asterisco) : campos obrigatorios</i> </h6>
+            <h5><i> * (asterisco) : campos obrigatórios</i> </h6>
         </div>
         <!-- Modal Body -->
         <div class="modal-body">
@@ -92,6 +92,12 @@
             <div class="center">
                 <div class="col-2-ls">
                     <label>Busca:</label><input type="search" class="modal-input" placeholder="Nome Cliente,RG/CPF,Outro"/>
+                    <select>
+                        <option>Nome</option>
+                        <option>Telefone</option>
+                        <option>Rg,CPF,outro</option>
+
+                    </select>
                 </div>
             </div>
         </div>
