@@ -21,3 +21,10 @@ CREATE TABLE users(user_id INT PRIMARY_KEY AUTO INCREMENT,
                    user_pass VARCHAR(45) NOT NULL,
                    user_active TINYINT);
 ```
+
+Now we have to insert a user to access the system, the user password must be encrypted to php decrypt
+to simplify you can add the same as mine
+``` SQL
+INSERT INTO users VALUES('','admin',1,'$2y$10$mjrSxAOiOyEU8zlwubUrQuVA3Bxzm6Iy4ZXVnRqCAyrnvSvZJsyJu',1)
+ ```
+In this case, the password will be the same as the username for admin
