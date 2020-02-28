@@ -11,7 +11,7 @@ To run this project in development mode, you will need to set up a local server 
 
 #### Preparing the database
 
-First we have to create the database and the system users table
+First we have to create the database and the system users table, run the following commands on your database administration system
 
 ``` SQL
 CREATE DATABASE main;
