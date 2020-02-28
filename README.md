@@ -13,9 +13,11 @@ To run this project in development mode, you will need to set up a local server 
 
 First we have to create the database and the system users table
 
+``` SQL
 CREATE DATABASE main;
 USE DATABASE main;
 CREATE TABLE users(user_id INT PRIMARY_KEY AUTO INCREMENT,
                    user_level TINYINT NOT NULL,
                    user_pass VARCHAR(45) NOT NULL,
                    user_active TINYINT);
+```
