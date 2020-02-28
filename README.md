@@ -19,7 +19,7 @@ USE DATABASE main;
 CREATE TABLE users(user_id INT PRIMARY_KEY AUTO INCREMENT,
                    user_level TINYINT NOT NULL,
                    user_pass VARCHAR(45) NOT NULL,
-                   user_active TINYINT);
+                   user_active TINYINT NOT NULL);
 ```
 
 Now we have to insert a user to access the system, the user password must be encrypted.
